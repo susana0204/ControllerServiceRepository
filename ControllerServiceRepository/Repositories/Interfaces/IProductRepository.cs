@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations;
 using ControllerServiceRepository.Entities;
 
 namespace ControllerServiceRepository.Repositories.Interfaces;
 
 public interface IProductRepository
 {
+  
    List<Product> GetAllProducts();
    Product? GetProductById(int id);
    Product AddProduct(Product product); 
